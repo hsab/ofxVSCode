@@ -107,6 +107,17 @@
                 "panel": "shared"
             },
             "command": "sh ${workspaceRoot}/.vscode/testDirs.sh ${workspaceRoot} ${workspaceFolder}"
+        },
+        {
+          "type": "shell",
+          "label": "Build Run Debug",
+          "presentation": {
+            "reveal": "never",
+            "panel": "shared"
+          },
+          "command": "make",
+          "args": ["RunDebug"],
+          "dependsOn": ["Build Debug"]
         }
     ]
 }
